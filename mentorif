@@ -1,0 +1,351 @@
+@@ -0,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    background-color: #f7cac9;
+}
+
+.navbar {
+    background-color: #f7786b ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    width: 100vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-logos {
+    margin: 0px 0.8vw;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.basic-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8vh 1vw;
+}
+
+.profile-pic {
+    height: 100px;
+    width: 100px;
+}
+
+.personal-info {
+    margin: 0.8vh 1vw;
+
+}
+
+.p-info {
+    margin: 0px 15px;
+}
+
+.info-item {
+    margin: 10px 0px;
+}
+
+hr {
+    width: 90vw;
+    margin: auto;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.career-obj {
+    margin: 0.8vh 1vw;
+}
+
+.goals {
+    margin: 0px 15px;
+}
+
+.goal-item {
+    margin: 10px 0px;
+}
+
+.educational-info {
+    margin: 0.8vh 1vw;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 80vw;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+.interests {
+    margin: 0.8vh 1vw;
+}
+
+.intrsts {
+    margin: 0px 15px;
+    list-style-type: none;
+}
+
+.interest-items {
+    margin: 10px 0px;
+} 
+ 140  css/styles.css 
+This file was deleted.
+
+ BIN -9.9 KB images/beer.png 
+Binary file not shown.
+ BIN -3.81 KB images/cloud.png 
+Binary file not shown.
+ BIN -11.7 KB images/code.png 
+Binary file not shown.
+ BIN -16.4 KB images/mayank.png 
+Binary file not shown.
+ BIN -64.3 KB images/mountain.png 
+Binary file not shown.
+ BIN +10.6 KB images/profile.png 
+Binary file not shown.
+ BIN -7.71 KB images/video-game.png 
+Binary file not shown.
+ 203  index.html 
+@@ -1,65 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Puneet Goyal</title>
+
+<head>
+  <meta charset="utf-8">
+  <title>Puneet Goyal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Mayank.</h1>
+      <h2>a <span class="pro">pro</span>grammer.</h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/mayank.png" alt="mayank-profile-img">
+      <h2>Hello.</h2>
+      <p class="intro">I am a Programmer and Web Developer. I'm the founder and CTO of RVM Gaming. I ❤️ coffee and playing video games.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="code-img" src="images/code.png" alt="code-img">
+
+        <h3>Design & Development</h3>
+        <p>I started learning to code when I was 12 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience making many usefull programs and scripts.</p>
+
+      </div>
+      <div class="skill-row">
+      	<img class="game-img" src="images/video-game.png" alt="game-img">
+
+        <h3>The Call Of Duty Pro</h3>
+        <p>But my best skill is actually in playing video games. I am the undisputed King of video games. Call Of Duty and CS:GO are my favourites.</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love games as much as I do.</h3>
+      <p class="contact-message">Love games as much as I do? Let's talk about how awesome they are! We can code while we play!</p>
+      <a class="btn" href="mailto:mkaushik0033@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/mayank-kaushik-b204951a4/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/its_kaushik9">Twitter</a>
+    <a class="footer-link" href="#">Website</a>
+    <p class="copyright">© 2021 Puneet Goyal</p>
+  </div>
+</body>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
+
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="brand">
+                <a href="#" class="logo">Puneet Goyal</a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="social-links">
+                    <li class="social-logos">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social-logos">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-logos">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Heading -->
+        <h1>Curriculum Vitae</h1>
+
+        <!-- Basic Info Setion -->
+        <section class="basic-info">
+            <p>
+                <strong>Name</strong> : Puneet Goyal <br> <strong>Location</strong> : New Delhi, India <br> <strong>E-Mail</strong> : mkaushik0033@gmail.com <br> <strong>Phone No</strong> : 9811723348
+            </p>
+            <img src="images/profile.png" alt="profile-picture" class="profile-pic">
+        </section>
+
+        <hr>
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <h3>Personal Information</h3>
+            <ul class="p-info">
+                <li class="info-item">Gender : Male</li>
+                <li class="info-item">Date Of Birth : 14th October, 2001</li>
+                <li class="info-item">Age : 19 years</li>
+                <li class="info-item">Marital Status : Un-Married</li>
+                <li class="info-item">Nationality : Indian</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Career Objectives -->
+        <section class="career-obj">
+            <h3>Career Objectives</h3>
+            <ul class="goals">
+                <li class="goal-item">To become a successful expert in the field of Information Technology by channelizing my technical knowledge and skills to ensure personal and professional growth and to contribute to the prosperity of the organization.</li>
+                <li class="goal-item">To pursue a job opportunity in a competitive environment that will challenge me to push my boundaries and expand my knowledge in the field of computer science while allowing me to add value to the dynamics of the company.</li>
+                <li class="goal-item">To be associated with a dynamic and progressive organization that will allow me to utilize my abilities and qualifications in the field to add value to the organization while providing me with opportunities for growth.</li>
+                <li class="goal-item">Seeking a position as (the job role being offered) that will enhance my skills and offer security while aiding my professional growth and helping me contribute to the organization’s growth.</li>
+                <li class="goal-item">Seeking a position in the field of Computer Science where I can utilize my skills to further work towards personal and professional development and contribute towards the prosperity of the organization.</li>
+                <li class="goal-item">To work as a (job role being offered) in your progressive organization that allows me the scope to update my knowledge to the latest trends and be part of a diverse and dynamic team that adds to both my personal and professional growth.</li>
+                <li class="goal-item">A highly driven individual looking for a challenging position in an organization specializing in tech which will be the impetus to my professional and personal prosperity and will play to my strengths.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Educational Qualification -->
+        <section class="educational-info">
+            <h3>Educational Qualification</h3>
+            <table>
+                <caption>My Education Qualification</caption>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board/University</th>
+                        <th>School/College</th>
+                        <th>Year of Passing</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE CSF-IBM</td>
+                        <td>MRU</td>
+                        <td>MRIIRS</td>
+                        <td>2023*</td>
+                        <td>Marks</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>Central Board of Secondary Education</td>
+                        <td>Kendriya Vidyalaya TKD</td>
+                        <td>2018-2019</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>Central Board of Secondary Education</td>
+                        <td>Kendriya Vidyalaya TKD</td>
+                        <td>2016-2017</td>
+                        <td>10.0 CGPA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Hobbies -->
+        <section class="interests">
+            <h3>Interests</h3>
+            <ul class="intrsts">
+                <li class="interest-items"><i class="fas fa-gamepad"></i>   Video Games</li>
+                <li class="interest-items"><i class="fas fa-rocket"></i>   Space Exploration</li>
+                <li class="interest-items"><i class="fas fa-futbol"></i>   Football</li>
+                <li class="interest-items"><i class="fas fa-biking"></i>   Cycling</li>
+                <li class="interest-items"><i class="fas fa-microchip"></i>   Artificial Intelligence</li>
+                <li class="interest-items"><i class="fas fa-swimming-pool"></i>   Swimming</li>
+            </ul>
+        </section>
+
+        <!-- FONT AWESOME ICONS SCRIPT TAG -->
+        <script src="https://kit.fontawesome.com/11dbcf5085.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
